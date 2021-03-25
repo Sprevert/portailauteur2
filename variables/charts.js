@@ -1,4 +1,4 @@
-if (typeof window === "undefined") {
+﻿if (typeof window === "undefined") {
   global.window = {};
 }
 if (typeof document === "undefined") {
@@ -353,7 +353,7 @@ let chartExample1 = {
   },
   data1: (canvas) => {
     return {
-      labels: ["Mai", "Juin", "Juillet", "Ao�t", "Septembre", "Octobre", "Novembre", "Decembre"],
+      labels: ["Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
       datasets: [
         {
           label: "Performance",
