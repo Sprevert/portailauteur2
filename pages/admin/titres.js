@@ -57,19 +57,18 @@ function Tables() {
 											<Media className="align-items-center">
 												<a
 													className=""
-													href="#pablo"
-													onClick={(e) => e.preventDefault()}
+													href="article"
 												>
 													<img
 														height="48"
 														alt="..."
-														src={require("assets/img/couverture/Check-Point.jpg")}
+														src={require("assets/img/couverture/9782070146413.jpg")}
 													/>
 												</a>
 											</Media>
 										</th>
 										<td>9782070146413</td>
-										<td>Check - point</td>
+										<td>CHECK-POINT</td>
 										<td>BLANCHE</td>
 										<td align="right">10/04/2015</td>
 										<td>LIVRE</td>
