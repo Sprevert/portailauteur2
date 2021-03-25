@@ -23,12 +23,12 @@ import {
 // layout for this page
 import Admin from "layouts/Admin.js";
 // core components
-import Header from "components/Headers/Header.js";
+import TitreHeader from "components/Headers/TitreHeader.js";
 
 function Tables() {
 	return (
 		<>
-			<Header />
+			<TitreHeader />
 			{/* Page content */}
 			<Container className="mt--7" fluid>
 				{/* Table */}

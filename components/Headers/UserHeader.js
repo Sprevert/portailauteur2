@@ -17,7 +17,7 @@ function UserHeader() {
         }}
       >
         {/* Mask */}
-        <span className="mask bg-gradient-default opacity-8" />
+        <span className="mask bg-gradient-yellow opacity-8" />
         {/* Header container */}
         
       </div>
