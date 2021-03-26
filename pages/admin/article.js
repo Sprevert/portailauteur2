@@ -147,7 +147,7 @@ function Documents() {
 									<Row>
 										<Col>
 											<span class="h6">au dernier arrêté (décembre 2020)</span>
-											<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>50</span></h3>
+											<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>5606</span></h3>
 										</Col>
 										<Col>
 											<span class="h6">depuis parution</span>
