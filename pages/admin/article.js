@@ -4,7 +4,7 @@ import classnames from "classnames";
 import { Line, Bar } from "react-chartjs-2";
 // reactstrap components
 import {
-	Badge,
+	Table,
 	Nav,
 	NavItem,
 	NavLink,
@@ -146,8 +146,8 @@ function Documents() {
 								<div className="text-center">
 									<Row>
 										<Col>
-											<span class="h6">depuis décembre 2020</span>
-											<h3><span id="ventes2020_1">576</span><span id="ventes2020_2" style={{ display: 'none' }}>50</span></h3>
+											<span class="h6">au dernier arrêté (décembre 2020)</span>
+											<h3><span id="ventes2020_1">194 000</span><span id="ventes2020_2" style={{ display: 'none' }}>50</span></h3>
 										</Col>
 										<Col>
 											<span class="h6">depuis parution</span>
@@ -214,6 +214,47 @@ function Documents() {
 										</Col>
 									</Row>
 								</div>
+							</CardBody>
+						</Card>
+					</Col>
+
+
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+
+						<Card className="card-profile bg-secondary  shadow">
+							<CardHeader className="bg-white border-0">
+								<Row className="align-items-center">
+									<div className="col">
+										<h3 className="text-uppercase ls-1 mb-1">Liste des réimpressions</h3>
+									</div>
+								</Row>
+							</CardHeader>
+							<CardBody>
+
+								<Table className="align-items-center table-flush" responsive>
+									<thead className="thead-light">
+										<tr>
+											<th scope="col">EAN</th>
+											<th scope="col">Maison</th>
+											<th scope="col">Nbre réimpression</th>
+											<th scope="col">Date</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>9782070146413</td>
+											<td>BLANCHE</td>
+											<td align="right">1 750</td>
+											<td>10 oct. 2017</td>
+										</tr>
+										<tr>
+											<td>9782070146413</td>
+											<td>BLANCHE</td>
+											<td align="right">4 250</td>
+											<td>26 mai 2016</td>
+										</tr>
+									</tbody>
+								</Table>
 							</CardBody>
 						</Card>
 					</Col>

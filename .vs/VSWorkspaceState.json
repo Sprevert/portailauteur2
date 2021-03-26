@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\components",
-    "\\components\\Navbars",
+    "\\components\\Headers",
     "\\Documentation",
     "\\layouts",
     "\\pages",
     "\\pages\\admin",
-    "\\pages\\auth"
+    "\\pages\\auth",
+    "\\variables"
   ],
-  "SelectedNode": "\\pages\\admin\\cessions.js",
+  "SelectedNode": "\\pages\\admin\\article.js",
   "PreviewInSolutionExplorer": false
 }
