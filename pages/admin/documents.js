@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import Link from 'next/link';
 
 // reactstrap components
 import {
@@ -162,6 +163,7 @@ function Documents() {
 					</Col>
 
 					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+
 						<Card className="card-profile bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
