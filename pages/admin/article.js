@@ -24,6 +24,7 @@ import {
 	chartOptions,
 	parseOptions,
 	chartVente1,
+	chartVente2,
 } from "variables/charts.js";
 
 function Documents() {
@@ -37,7 +38,7 @@ function Documents() {
 		e.preventDefault();
 		setActiveNav(index);
 		setchartVente1Data("data" + index);
-		document.getElementById('ventes_1').style.display = index==1?'block':'none';
+		document.getElementById('ventes_1').style.display = index == 1 ? 'block' : 'none';
 		document.getElementById('ventes2020_1').style.display = index == 1 ? 'block' : 'none';
 		document.getElementById('ventes_2').style.display = index == 2 ? 'block' : 'none';
 		document.getElementById('ventes2020_2').style.display = index == 2 ? 'block' : 'none';
@@ -49,7 +50,7 @@ function Documents() {
 			<Container className="mt--7" fluid>
 				{/* Table */}
 				<Row>
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="6">
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="card-article shadow">
 							<Row className="justify-content-center">
 								<Col className="order-lg-2" lg="3">
@@ -81,7 +82,7 @@ function Documents() {
 											<span class="h6 text-muted">Maison d'édition</span>
 											<h4>GALLIMARD</h4>
 										</Col>
-										
+
 										<Col>
 											<span class="h6 text-muted">Collection</span>
 											<h4>BLANCHE</h4>
@@ -101,7 +102,8 @@ function Documents() {
 							</CardBody>
 						</Card>
 					</Col>
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="6">
+
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
 						<Card className="card-profile bg-secondary  shadow">
 							<CardHeader className="bg-white border-0">
 								<Row className="align-items-center">
@@ -159,11 +161,65 @@ function Documents() {
 											getDatasetAtEvent={(e) => console.log(e)}
 										/>
 									</div>
+
 								</div>
 							</CardBody>
 						</Card>
 					</Col>
+
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+						<Card className="card-profile bg-secondary  shadow">
+							<CardHeader className="bg-white border-0">
+								<Row className="align-items-center">
+									<div className="col">
+										<h3 className="text-uppercase ls-1 mb-1">Mes Ventes GFK</h3>
+									</div>
+								</Row>
+							</CardHeader>
+							<CardBody>
+								<div className="text-center">
+									<div className="chart">
+										<Bar
+											data={chartVente2.data}
+											options={chartVente2.options}
+										/>
+									</div>
+
+								</div>
+							</CardBody>
+						</Card>
+					</Col>
+
+					<Col className="order-xl-2 mb-5 mb-xl-5" xl="6">
+
+						<Card className="card-profile bg-secondary  shadow">
+							<CardHeader className="bg-white border-0">
+								<Row className="align-items-center">
+									<div className="col">
+										<h3 className="text-uppercase ls-1 mb-1">Stocks</h3>
+									</div>
+								</Row>
+							</CardHeader>
+							<CardBody>
+
+								<div className="text-center">
+									<Row>
+										<Col>
+											<span class="h6">Disponible à la vente</span>
+											<h3>7659</h3>
+										</Col>
+										<Col>
+											<span class="h6">Stock en dépôt</span>
+											<h3>2590</h3>
+										</Col>
+									</Row>
+								</div>
+							</CardBody>
+						</Card>
+					</Col>
+
 				</Row>
+
 			</Container>
 		</>
 	);

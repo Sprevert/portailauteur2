@@ -1,4 +1,5 @@
 ﻿import React from "react";
+import Link from 'next/link'
 
 // reactstrap components
 import {
@@ -67,7 +68,8 @@ function Tables() {
 												</a>
 											</Media>
 										</th>
-										<td>9782070146413</td>
+
+										<td><Link href="article">9782070146413</Link></td>
 										<td>CHECK-POINT</td>
 										<td>BLANCHE</td>
 										<td align="right">10/04/2015</td>
@@ -114,7 +116,7 @@ function Tables() {
 											<Media className="align-items-center">
 												<a
 													className=""
-													href="#pablo"
+													href="article"
 													onClick={(e) => e.preventDefault()}
 												>
 													<img
@@ -125,7 +127,7 @@ function Tables() {
 												</a>
 											</Media>
 										</th>
-										<td>9782070455379</td>
+										<td><Link href="article">9782070455379</Link></td>
 										<td>Immortelle randonnée - Compostelle malgré moi</td>
 										<td>FOLIO</td>
 										<td align="right">02/10/2014</td>
@@ -172,7 +174,7 @@ function Tables() {
 											<Media className="align-items-center">
 												<a
 													className=""
-													href="#pablo"
+													href="article"
 													onClick={(e) => e.preventDefault()}
 												>
 													<img
@@ -183,7 +185,7 @@ function Tables() {
 												</a>
 											</Media>
 										</th>
-										<td>9782081420250</td>
+										<td><Link href="article">9782081420250</Link></td>
 										<td>Les trois femmes du consul</td>
 										<td>FLAMMARION</td>
 										<td align="right">09/10/2019</td>
@@ -228,7 +230,7 @@ function Tables() {
 									<tr>
 										<th scope="row">
 										</th>
-										<td>9782290005569</td>
+										<td><Link href="article">9782290005569</Link></td>
 										<td>Le parfum d'Adam</td>
 										<td>J'AI LU</td>
 										<td align="right">10/01/2007</td>
