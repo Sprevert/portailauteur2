@@ -162,7 +162,7 @@ function Profile() {
 														className="form-control-label"
 														htmlFor="input-address"
 													>
-														Addesse
+														Adresse
                           </label>
 													<Input
 														className="form-control-alternative"
@@ -175,6 +175,23 @@ function Profile() {
 											</Col>
 										</Row>
 										<Row>
+											<Col lg="4">
+												<FormGroup>
+													<label
+														className="form-control-label"
+														htmlFor="input-country"
+													>
+														Code postal
+                          </label>
+													<Input
+														className="form-control-alternative"
+														id="input-postal-code"
+														placeholder="Code postal"
+														type="number"
+													/>
+												</FormGroup>
+											</Col>
+
 											<Col lg="4">
 												<FormGroup>
 													<label
@@ -192,6 +209,7 @@ function Profile() {
 													/>
 												</FormGroup>
 											</Col>
+
 											<Col lg="4">
 												<FormGroup>
 													<label
@@ -205,22 +223,6 @@ function Profile() {
 														id="input-country"
 														placeholder="Pays"
 														type="text"
-													/>
-												</FormGroup>
-											</Col>
-											<Col lg="4">
-												<FormGroup>
-													<label
-														className="form-control-label"
-														htmlFor="input-country"
-													>
-														Code postal
-                          </label>
-													<Input
-														className="form-control-alternative"
-														id="input-postal-code"
-														placeholder="Code postal"
-														type="number"
 													/>
 												</FormGroup>
 											</Col>
