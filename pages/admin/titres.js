@@ -92,21 +92,14 @@ function Tables() {
 													<DropdownItem
 														href="#pablo"
 														onClick={(e) => e.preventDefault()}
-													>
-														Action
-                          </DropdownItem>
+													>Action</DropdownItem>
 													<DropdownItem
-														href="#pablo"
+														href="article"
 														onClick={(e) => e.preventDefault()}
 													>
-														Another action
+														...
                           </DropdownItem>
-													<DropdownItem
-														href="#pablo"
-														onClick={(e) => e.preventDefault()}
-													>
-														Something else here
-                          </DropdownItem>
+													
 												</DropdownMenu>
 											</UncontrolledDropdown>
 										</td>
