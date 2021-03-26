@@ -23,13 +23,12 @@ import Header from "components/Headers/TitreHeader.js";
 import {
 	chartOptions,
 	parseOptions,
-	chartExample1,
-	chartExample2,
+	chartVente1,
 } from "variables/charts.js";
 
 function Documents() {
 	const [activeNav, setActiveNav] = React.useState(1);
-	const [chartExample1Data] = React.useState("data1");
+	const [chartVente1Data, setchartVente1Data] = React.useState("data1");
 	if (window.Chart) {
 		parseOptions(Chart, chartOptions());
 	}
@@ -37,7 +36,11 @@ function Documents() {
 	const toggleNavs = (e, index) => {
 		e.preventDefault();
 		setActiveNav(index);
-		setChartExample1Data("data" + index);
+		setchartVente1Data("data" + index);
+		document.getElementById('ventes_1').style.display = index==1?'block':'none';
+		document.getElementById('ventes2020_1').style.display = index == 1 ? 'block' : 'none';
+		document.getElementById('ventes_2').style.display = index == 2 ? 'block' : 'none';
+		document.getElementById('ventes2020_2').style.display = index == 2 ? 'block' : 'none';
 	};
 	return (
 		<>
@@ -142,17 +145,17 @@ function Documents() {
 									<Row>
 										<Col>
 											<span class="h6">depuis décembre 2020</span>
-											<h3>1520</h3>
+											<h3><span id="ventes2020_1">576</span><span id="ventes2020_2" style={{ display: 'none' }}>50</span></h3>
 										</Col>
 										<Col>
 											<span class="h6">depuis parution</span>
-											<h3>5020</h3>
+											<h3><span id="ventes_1">200 000</span><span id="ventes_2" style={{ display: 'none' }}>5656</span></h3>
 										</Col>
 									</Row>
 									<div className="chart">
 										<Bar
-											data={chartExample1[chartExample1Data]}
-											options={chartExample1.options}
+											data={chartVente1[chartVente1Data]}
+											options={chartVente1.options}
 											getDatasetAtEvent={(e) => console.log(e)}
 										/>
 									</div>

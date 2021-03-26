@@ -26,8 +26,7 @@ import Admin from "layouts/Admin.js";
 import {
   chartOptions,
   parseOptions,
-  chartExample1,
-  chartExample2,
+  chartExample1
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
